@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright 2015 European Molecular Biology Laboratory, Heidelberg,
+Germany and UCL, London, United Kingdom.
 
+Licensed under the Apache License, Version 2.0 (the "License"); you
+may not use this file except in compliance with the License.  You may
+obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+     
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+implied. See the License for the specific language governing
+permissions and limitations under the License.
+-->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
     targetNamespace="http://www.pharmml.org/probonto/0.2/ProbOnto"
     xmlns:po="http://www.pharmml.org/probonto/0.2/ProbOnto"
@@ -10,10 +25,10 @@
     version="0.2">
 
     <xs:import namespace="http://www.pharmml.org/pharmml/0.7/CommonTypes"
-        schemaLocation="../definitions/commonTypes.xsd"/>
+        schemaLocation="../pharmml-spec/definitions/commonTypes.xsd"/>
     
     <xs:import namespace="http://www.pharmml.org/pharmml/0.7/Dataset"
-        schemaLocation="../definitions/dataset.xsd"/>
+        schemaLocation="../pharmml-spec/definitions/dataset.xsd"/>
     
 
     <xs:simpleType name="DistroNameType">
@@ -48,7 +63,7 @@
             <xs:enumeration value="Gompertz"/>
             <xs:enumeration value="Gumbel"/>                <!-- aka Extreme Value -->
             <xs:enumeration value="InverseGamma"/>
-            <xs:enumeration value="Laplace1"/>               <!-- aka Double-exponential -->
+            <xs:enumeration value="Laplace1"/>              <!-- aka Double-exponential -->
             <xs:enumeration value="Laplace2"/>
             <xs:enumeration value="LogNormal1"/>
             <xs:enumeration value="LogNormal2"/>
