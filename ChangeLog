@@ -1,3 +1,7 @@
 ChangeLog
 0.2	03 July 2015	
 separate schema setup
+
+0.2.3	24 July 2015	
+- codenames for new distributions added
+- typos and bug fixes in the database
