@@ -107,7 +107,7 @@ permissions and limitations under the License.
         </xs:restriction>
     </xs:simpleType>
     
-    <xs:simpleType name="ParameterNameType"> <!-- 42 so far -->
+    <xs:simpleType name="ParameterNameType">
         <xs:annotation>
             <xs:documentation>The names of ProbOnto parameters.</xs:documentation>
         </xs:annotation>
