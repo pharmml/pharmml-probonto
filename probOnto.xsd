@@ -131,7 +131,7 @@ permissions and limitations under the License.
             <xs:enumeration value="meanLog"/>
             <xs:enumeration value="median"/>
             <xs:enumeration value="minimum"/>
-            <xs:enumeration value="numberOfFailures"/>
+<!--            <xs:enumeration value="numberOfFailures"/> after redefininf NB1 not required-->
             <xs:enumeration value="numberOfSuccesses"/>
             <xs:enumeration value="numberOfTrials"/>
             <xs:enumeration value="numberOfValues"/>
