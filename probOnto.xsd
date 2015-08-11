@@ -47,6 +47,7 @@ permissions and limitations under the License.
             <xs:enumeration value="InverseBinomial1"/>
             <xs:enumeration value="NegativeBinomial1"/>
             <xs:enumeration value="NegativeBinomial2"/>
+            <xs:enumeration value="NegativeBinomial4"/>
             <xs:enumeration value="Poisson1"/>
             <xs:enumeration value="UniformDiscrete1"/>
             <xs:enumeration value="UniformDiscrete2"/>
@@ -131,7 +132,7 @@ permissions and limitations under the License.
             <xs:enumeration value="meanLog"/>
             <xs:enumeration value="median"/>
             <xs:enumeration value="minimum"/>
-<!--            <xs:enumeration value="numberOfFailures"/> after redefininf NB1 not required-->
+            <xs:enumeration value="numberOfFailures"/> <!-- required for NB4 -->
             <xs:enumeration value="numberOfSuccesses"/>
             <xs:enumeration value="numberOfTrials"/>
             <xs:enumeration value="numberOfValues"/>
