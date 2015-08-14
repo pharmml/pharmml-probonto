@@ -47,6 +47,7 @@ permissions and limitations under the License.
             <xs:enumeration value="InverseBinomial1"/>
             <xs:enumeration value="NegativeBinomial1"/>
             <xs:enumeration value="NegativeBinomial2"/>
+            <xs:enumeration value="NegativeBinomial3"/>
             <xs:enumeration value="NegativeBinomial4"/>
             <xs:enumeration value="Poisson1"/>
             <xs:enumeration value="UniformDiscrete1"/>
@@ -123,7 +124,7 @@ permissions and limitations under the License.
             <xs:enumeration value="denominator"/>
             <xs:enumeration value="dispersion"/>
             <xs:enumeration value="inverseScaleMatrix"/>
-            <xs:enumeration value="k"/>
+            <xs:enumeration value="index"/>
             <xs:enumeration value="lambda"/>
             <xs:enumeration value="location"/>
             <xs:enumeration value="lowerLimit"/>
@@ -139,7 +140,6 @@ permissions and limitations under the License.
             <xs:enumeration value="numerator"/>
             <xs:enumeration value="overdispersion"/>
             <xs:enumeration value="populationSize"/>
-            <xs:enumeration value="p"/>
             <xs:enumeration value="precision"/>
             <xs:enumeration value="precisionMatrix"/>
             <xs:enumeration value="probability"/>
