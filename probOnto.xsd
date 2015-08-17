@@ -77,6 +77,7 @@ permissions and limitations under the License.
             <xs:enumeration value="LogNormal3"/>
             <xs:enumeration value="LogNormal4"/>
             <xs:enumeration value="LogNormal5"/>
+            <xs:enumeration value="LogNormal6"/>
             <xs:enumeration value="LogUniform"/>
             <xs:enumeration value="Nokagami1"/>
             <xs:enumeration value="Normal1"/>
@@ -123,6 +124,7 @@ permissions and limitations under the License.
             <xs:enumeration value="degreesOfFreedom"/>
             <xs:enumeration value="denominator"/>
             <xs:enumeration value="dispersion"/>
+            <xs:enumeration value="geomStdev"/>
             <xs:enumeration value="inverseScaleMatrix"/>
             <xs:enumeration value="index"/>
             <xs:enumeration value="lambda"/>
