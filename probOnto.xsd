@@ -42,6 +42,7 @@ permissions and limitations under the License.
             <xs:enumeration value="CategoricalOrdered1"/>
             <xs:enumeration value="CategoricalNonordered1"/>
             <xs:enumeration value="GeneralizedPoisson1"/>
+            <xs:enumeration value="GeneralizedPoisson2"/>
             <xs:enumeration value="Geometric1"/>
             <xs:enumeration value="Hypergeometric1"/>
             <xs:enumeration value="InverseBinomial1"/>
