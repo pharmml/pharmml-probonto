@@ -41,6 +41,7 @@ permissions and limitations under the License.
             <xs:enumeration value="Binomial1"/>
             <xs:enumeration value="CategoricalOrdered1"/>
             <xs:enumeration value="CategoricalNonordered1"/>
+            <xs:enumeration value="DoublePoisson1"/>
             <xs:enumeration value="GeneralizedPoisson1"/>
             <xs:enumeration value="GeneralizedPoisson2"/>
             <xs:enumeration value="GeneralizedPoisson3"/>
@@ -80,7 +81,7 @@ permissions and limitations under the License.
             <xs:enumeration value="LogNormal4"/>
             <xs:enumeration value="LogNormal5"/>
             <xs:enumeration value="LogNormal6"/>
-            <xs:enumeration value="LogUniform"/>
+            <xs:enumeration value="LogUniform1"/>
             <xs:enumeration value="Nokagami1"/>
             <xs:enumeration value="Normal1"/>
             <xs:enumeration value="Normal2"/>
