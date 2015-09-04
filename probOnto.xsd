@@ -22,7 +22,7 @@ permissions and limitations under the License.
     attributeFormDefault="unqualified"
     xmlns:ct="http://www.pharmml.org/pharmml/0.7/CommonTypes"
     xmlns:ds="http://www.pharmml.org/pharmml/0.7/Dataset"
-    version="0.2">
+    version="0.2.4">
 
     <xs:import namespace="http://www.pharmml.org/pharmml/0.7/CommonTypes"
         schemaLocation="../pharmml-spec/definitions/commonTypes.xsd"/>
@@ -138,7 +138,7 @@ permissions and limitations under the License.
             <xs:enumeration value="meanLog"/>
             <xs:enumeration value="median"/>
             <xs:enumeration value="minimum"/>
-            <xs:enumeration value="numberOfFailures"/> <!-- required for NB4 -->
+            <xs:enumeration value="numberOfFailures"/>
             <xs:enumeration value="numberOfSuccesses"/>
             <xs:enumeration value="numberOfTrials"/>
             <xs:enumeration value="numberOfValues"/>
