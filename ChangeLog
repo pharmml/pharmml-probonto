@@ -5,3 +5,8 @@ separate schema setup
 0.2.3	24 July 2015	
 - codenames for new distributions added
 - typos and bug fixes in the database
+
+0.2.4 	4 September 2915
+- added new distributions and parameterisations - total of ~70
+- added >= 100 relationships and properties
+- corrected/extended schema where required 
