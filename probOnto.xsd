@@ -56,6 +56,7 @@ permissions and limitations under the License.
             <xs:enumeration value="UniformDiscrete1"/>
             <xs:enumeration value="UniformDiscrete2"/>
             <xs:enumeration value="ZeroInflatedNegativeBinomial1"/>
+            <xs:enumeration value="ZeroInflatedGeneralizedPoisson1"/>
             <xs:enumeration value="ZeroInflatedPoisson1"/>
             <!-- Univariate continuous -->
             <xs:enumeration value="Beta1"/>
@@ -65,8 +66,10 @@ permissions and limitations under the License.
             <xs:enumeration value="Exponential1"/>
             <xs:enumeration value="F1"/>                     <!-- aka Fisher-Snedecor -->
             <xs:enumeration value="Gamma1"/>
+            <xs:enumeration value="Gamma2"/>
             <xs:enumeration value="GeneralizedGamma1"/>
             <xs:enumeration value="GeneralizedGamma2"/>
+            <xs:enumeration value="GeneralizedGamma3"/>
             <xs:enumeration value="Gompertz1"/>
             <xs:enumeration value="Gumbel1"/>                <!-- aka Extreme Value -->
             <xs:enumeration value="InverseGamma1"/>
@@ -74,6 +77,7 @@ permissions and limitations under the License.
             <xs:enumeration value="Laplace1"/>              <!-- aka Double-exponential -->
             <xs:enumeration value="Laplace2"/>
             <xs:enumeration value="Logistic1"/>
+            <xs:enumeration value="Logistic2"/>
             <xs:enumeration value="LogLogistic1"/>
             <xs:enumeration value="LogNormal1"/>
             <xs:enumeration value="LogNormal2"/>
@@ -92,6 +96,7 @@ permissions and limitations under the License.
             <xs:enumeration value="StandardNormal1"/>
             <xs:enumeration value="StandardUniform1"/>
             <xs:enumeration value="StudentT1"/>
+            <xs:enumeration value="StudentT2"/>
             <xs:enumeration value="Triangular1"/>
             <xs:enumeration value="TruncatedNormal1"/>
             <xs:enumeration value="Uniform1"/>
@@ -108,7 +113,7 @@ permissions and limitations under the License.
             <xs:enumeration value="MultivariateStudentT2"/>
             <xs:enumeration value="Wishart1"/>
             <xs:enumeration value="Wishart2"/>
-            <!-- Multivariate -->
+            <!-- Mixtures -->
             <xs:enumeration value="MixtureDistribution"/>
         </xs:restriction>
     </xs:simpleType>
