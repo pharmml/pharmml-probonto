@@ -86,7 +86,7 @@ permissions and limitations under the License.
             <xs:enumeration value="LogNormal5"/>
             <xs:enumeration value="LogNormal6"/>
             <xs:enumeration value="LogUniform1"/>
-            <xs:enumeration value="Nokagami1"/>
+            <xs:enumeration value="Nakagami1"/>
             <xs:enumeration value="Normal1"/>
             <xs:enumeration value="Normal2"/>
             <xs:enumeration value="Normal3"/>
