@@ -134,6 +134,7 @@ permissions and limitations under the License.
             <xs:enumeration value="denominator"/>
             <xs:enumeration value="dispersion"/>
             <xs:enumeration value="geomStdev"/>
+            <xs:enumeration value="inverseScale"/>
             <xs:enumeration value="inverseScaleMatrix"/>
             <xs:enumeration value="index"/>
             <xs:enumeration value="lambda"/>
