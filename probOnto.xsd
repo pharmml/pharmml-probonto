@@ -65,6 +65,7 @@ permissions and limitations under the License.
             <xs:enumeration value="Cauchy1"/>
             <xs:enumeration value="ChiSquared1"/>
             <xs:enumeration value="Exponential1"/>
+            <xs:enumeration value="Exponential2"/>
             <xs:enumeration value="F1"/>                     <!-- aka Fisher-Snedecor -->
             <xs:enumeration value="Gamma1"/>
             <xs:enumeration value="Gamma2"/>
