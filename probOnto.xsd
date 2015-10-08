@@ -38,6 +38,7 @@ permissions and limitations under the License.
         <xs:restriction base="xs:Name">
             <!-- Univariate discrete -->
             <xs:enumeration value="Bernoulli1"/>
+            <xs:enumeration value="BetaBinomial1"/>
             <xs:enumeration value="Binomial1"/>
             <xs:enumeration value="CategoricalOrdered1"/>
             <xs:enumeration value="CategoricalNonordered1"/>
@@ -64,9 +65,11 @@ permissions and limitations under the License.
             <xs:enumeration value="BirnbaumSaunders1"/>
             <xs:enumeration value="Cauchy1"/>
             <xs:enumeration value="ChiSquared1"/>
+            <xs:enumeration value="Erlang1"/>
             <xs:enumeration value="Exponential1"/>
             <xs:enumeration value="Exponential2"/>
             <xs:enumeration value="F1"/>                     <!-- aka Fisher-Snedecor -->
+            <xs:enumeration value="F2"/>                     <!-- aka Fisher-Snedecor -->
             <xs:enumeration value="Gamma1"/>
             <xs:enumeration value="Gamma2"/>
             <xs:enumeration value="GeneralizedGamma1"/>
@@ -74,13 +77,15 @@ permissions and limitations under the License.
             <xs:enumeration value="GeneralizedGamma3"/>
             <xs:enumeration value="Gompertz1"/>
             <xs:enumeration value="Gumbel1"/>                <!-- aka Extreme Value -->
+            <xs:enumeration value="HalfNormal1"/>
             <xs:enumeration value="InverseGamma1"/>
-            <xs:enumeration value="InverseGaussian1"/>
+            <xs:enumeration value="InverseGaussian1"/>      <!-- aka Wald -->
             <xs:enumeration value="Laplace1"/>              <!-- aka Double-exponential -->
             <xs:enumeration value="Laplace2"/>
             <xs:enumeration value="Logistic1"/>
             <xs:enumeration value="Logistic2"/>
             <xs:enumeration value="LogLogistic1"/>
+            <xs:enumeration value="LogLogistic2"/>
             <xs:enumeration value="LogNormal1"/>
             <xs:enumeration value="LogNormal2"/>
             <xs:enumeration value="LogNormal3"/>
@@ -140,6 +145,7 @@ permissions and limitations under the License.
             <xs:enumeration value="index"/>
             <xs:enumeration value="lambda"/>
             <xs:enumeration value="location"/>
+            <xs:enumeration value="lowerBound"/>
             <xs:enumeration value="lowerLimit"/>
             <xs:enumeration value="m"/>
             <xs:enumeration value="maximum"/>
@@ -170,6 +176,7 @@ permissions and limitations under the License.
             <xs:enumeration value="stdevLog"/>
             <xs:enumeration value="tau"/>
             <xs:enumeration value="theta"/>
+            <xs:enumeration value="upperBound"/>
             <xs:enumeration value="upperLimit"/>
             <xs:enumeration value="var"/>
             <xs:enumeration value="varLog"/>
