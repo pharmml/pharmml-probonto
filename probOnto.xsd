@@ -22,7 +22,7 @@ permissions and limitations under the License.
     attributeFormDefault="unqualified"
     xmlns:ct="http://www.pharmml.org/pharmml/0.7/CommonTypes"
     xmlns:ds="http://www.pharmml.org/pharmml/0.7/Dataset"
-    version="0.2.4">
+    version="0.2.9">
 
     <xs:import namespace="http://www.pharmml.org/pharmml/0.7/CommonTypes"
         schemaLocation="../pharmml-spec/definitions/commonTypes.xsd"/>
@@ -68,19 +68,19 @@ permissions and limitations under the License.
             <xs:enumeration value="Erlang1"/>
             <xs:enumeration value="Exponential1"/>
             <xs:enumeration value="Exponential2"/>
-            <xs:enumeration value="F1"/>                     <!-- aka Fisher-Snedecor -->
-            <xs:enumeration value="F2"/>                     <!-- aka Fisher-Snedecor -->
+            <xs:enumeration value="F1"/>
+            <xs:enumeration value="F2"/>
             <xs:enumeration value="Gamma1"/>
             <xs:enumeration value="Gamma2"/>
             <xs:enumeration value="GeneralizedGamma1"/>
             <xs:enumeration value="GeneralizedGamma2"/>
             <xs:enumeration value="GeneralizedGamma3"/>
             <xs:enumeration value="Gompertz1"/>
-            <xs:enumeration value="Gumbel1"/>                <!-- aka Extreme Value -->
+            <xs:enumeration value="Gumbel1"/>
             <xs:enumeration value="HalfNormal1"/>
             <xs:enumeration value="InverseGamma1"/>
-            <xs:enumeration value="InverseGaussian1"/>      <!-- aka Wald -->
-            <xs:enumeration value="Laplace1"/>              <!-- aka Double-exponential -->
+            <xs:enumeration value="InverseGaussian1"/>
+            <xs:enumeration value="Laplace1"/>
             <xs:enumeration value="Laplace2"/>
             <xs:enumeration value="Logistic1"/>
             <xs:enumeration value="Logistic2"/>
