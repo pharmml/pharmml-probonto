@@ -22,7 +22,7 @@ permissions and limitations under the License.
     attributeFormDefault="unqualified"
     xmlns:ct="http://www.pharmml.org/pharmml/0.7/CommonTypes"
     xmlns:ds="http://www.pharmml.org/pharmml/0.7/Dataset"
-    version="0.2.9">
+    version="0.3">
 
     <xs:import namespace="http://www.pharmml.org/pharmml/0.7/CommonTypes"
         schemaLocation="../pharmml-spec/definitions/commonTypes.xsd"/>
@@ -42,6 +42,8 @@ permissions and limitations under the License.
             <xs:enumeration value="Binomial1"/>
             <xs:enumeration value="CategoricalOrdered1"/>
             <xs:enumeration value="CategoricalNonordered1"/>
+            <xs:enumeration value="CategoricalOrdered1"/>
+            <xs:enumeration value="ConwayMaxwellPoisson1"/>
             <xs:enumeration value="DoublePoisson1"/>
             <xs:enumeration value="GeneralizedNegativeBinomial1"/>
             <xs:enumeration value="GeneralizedPoisson1"/>
@@ -54,6 +56,7 @@ permissions and limitations under the License.
             <xs:enumeration value="NegativeBinomial2"/>
             <xs:enumeration value="NegativeBinomial3"/>
             <xs:enumeration value="NegativeBinomial4"/>
+            <xs:enumeration value="NegativeBinomial5"/>
             <xs:enumeration value="Poisson1"/>
             <xs:enumeration value="UniformDiscrete1"/>
             <xs:enumeration value="UniformDiscrete2"/>
@@ -166,6 +169,7 @@ permissions and limitations under the License.
             <xs:enumeration value="probabilityOfSuccess"/>
             <xs:enumeration value="probabilityOfZero"/>
             <xs:enumeration value="rate"/>
+            <xs:enumeration value="rateOfDecay"/>
             <xs:enumeration value="scale"/>
             <xs:enumeration value="scaleMatrix"/>
             <xs:enumeration value="shape"/>

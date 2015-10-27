@@ -10,3 +10,8 @@ separate schema setup
 - added new distributions and parameterisations - total of ~70
 - added >= 100 relationships and properties
 - corrected/extended schema where required 
+
+0.2.9 	11 October 2915
+- added new distributions and parameterisations - total of 81
+- added new relationships - total on 128
+- corrected/extended schema where required 
