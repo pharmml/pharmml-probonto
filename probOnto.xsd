@@ -22,6 +22,7 @@ permissions and limitations under the License.
     attributeFormDefault="unqualified"
     xmlns:ct="http://www.pharmml.org/pharmml/0.7/CommonTypes"
     xmlns:ds="http://www.pharmml.org/pharmml/0.7/Dataset"
+    xmlns:design="http://www.pharmml.org/pharmml/0.7/TrialDesign"
     version="0.3">
 
     <xs:import namespace="http://www.pharmml.org/pharmml/0.7/CommonTypes"
@@ -30,7 +31,11 @@ permissions and limitations under the License.
     <xs:import namespace="http://www.pharmml.org/pharmml/0.7/Dataset"
         schemaLocation="../pharmml-spec/definitions/dataset.xsd"/>
     
-
+    <!-- TEST -->
+    <xs:import namespace="http://www.pharmml.org/pharmml/0.7/TrialDesign"
+        schemaLocation="http://www.pharmml.org/pharmml/0.7/TrialDesign"/>
+    <!-- TEST -->
+    
     <xs:simpleType name="DistroNameType">
         <xs:annotation>
             <xs:documentation>The names of ProbOnto distributions.</xs:documentation>
@@ -125,6 +130,10 @@ permissions and limitations under the License.
             <xs:enumeration value="Wishart2"/>
             <!-- Mixtures -->
             <xs:enumeration value="MixtureDistribution"/>
+            <!-- SAMPLES -->
+            <xs:enumeration value="RandomSample"/>
+            <xs:enumeration value="StatisticalSample"/>
+            <xs:enumeration value="UnknownSample"/>
         </xs:restriction>
     </xs:simpleType>
     
@@ -196,10 +205,13 @@ permissions and limitations under the License.
         <xs:complexContent>
             <xs:extension base="ct:PharmMLRootType">
                 <xs:sequence>
-                    <xs:element name="Parameter" maxOccurs="unbounded" type="po:DistributionParameterType"/>
+                    <xs:element name="Parameter" minOccurs="0" maxOccurs="unbounded" type="po:DistributionParameterType"/>
                     <xs:element name="LowerTruncationBound" minOccurs="0" maxOccurs="1" type="po:DistributionBoundType"/>
                     <xs:element name="UpperTruncationBound" minOccurs="0" maxOccurs="1" type="po:DistributionBoundType"/>
                     <xs:element name="MixtureComponent" minOccurs="0" maxOccurs="unbounded" type="po:MixtureComponent"/>
+                    <!-- TEST -->
+                    <xs:element name="ExternalDataSet" minOccurs="0" maxOccurs="unbounded" type="design:ExternalDataSetType"/>
+                    <!-- /TEST -->
                 </xs:sequence>
                 <xs:attribute name="name" use="required" type="po:DistroNameType"/>
             </xs:extension>
