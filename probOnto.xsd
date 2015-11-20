@@ -33,7 +33,7 @@ permissions and limitations under the License.
     
     <!-- TEST -->
     <xs:import namespace="http://www.pharmml.org/pharmml/0.7/TrialDesign"
-        schemaLocation="../pharmml-spec/definitions/trialdesign.xsd"/>
+        schemaLocation="../pharmml-spec/definitions/trialDesign.xsd"/>
     <!-- TEST -->
     
     <xs:simpleType name="DistroNameType">
@@ -210,7 +210,7 @@ permissions and limitations under the License.
                     <xs:element name="UpperTruncationBound" minOccurs="0" maxOccurs="1" type="po:DistributionBoundType"/>
                     <xs:element name="MixtureComponent" minOccurs="0" maxOccurs="unbounded" type="po:MixtureComponent"/>
                     <!-- TEST -->
-                    <xs:element name="ExternalDataSet" minOccurs="0" maxOccurs="unbounded" type="design:ExternalDataSetType"/>
+                    <xs:element name="DataSet" minOccurs="0" type="ds:DataSetType"/>
                     <!-- /TEST -->
                 </xs:sequence>
                 <xs:attribute name="name" use="required" type="po:DistroNameType"/>
