@@ -33,7 +33,7 @@ permissions and limitations under the License.
     
     <!-- TEST -->
     <xs:import namespace="http://www.pharmml.org/pharmml/0.7/TrialDesign"
-        schemaLocation="http://www.pharmml.org/pharmml/0.7/TrialDesign"/>
+        schemaLocation="../pharmml-spec/definitions/trialdesign.xsd"/>
     <!-- TEST -->
     
     <xs:simpleType name="DistroNameType">
