@@ -130,7 +130,7 @@ permissions and limitations under the License.
             <xs:enumeration value="Wishart2"/>
             <!-- Mixtures -->
             <xs:enumeration value="MixtureDistribution"/>
-            <!-- SAMPLES -->
+            <!-- Samples -->
             <xs:enumeration value="RandomSample"/>
             <xs:enumeration value="StatisticalSample"/>
             <xs:enumeration value="UnknownSample"/>
@@ -210,8 +210,24 @@ permissions and limitations under the License.
                     <xs:element name="UpperTruncationBound" minOccurs="0" maxOccurs="1" type="po:DistributionBoundType"/>
                     <xs:element name="MixtureComponent" minOccurs="0" maxOccurs="unbounded" type="po:MixtureComponent"/>
                     <!-- TEST -->
-<!--                    <xs:element name="ExternalDataSet" minOccurs="0" maxOccurs="unbounded" type="design:ExternalDataSetType"/>-->
-                    <xs:element minOccurs="0" ref="ds:DataSet"/>
+                    <xs:sequence minOccurs="0">
+                        <xs:element name="ColumnMapping" minOccurs="0" maxOccurs="unbounded" type="ds:ColumnMappingType">
+                            <xs:annotation>
+                                <xs:documentation>
+                                    Defines mapping to the dataset. 
+                                </xs:documentation>
+                            </xs:annotation>
+                        </xs:element>
+                        <xs:sequence>
+                            <xs:element ref="ds:DataSet">
+                                <xs:annotation>
+                                    <xs:documentation>
+                                        Data for each subject within the study.
+                                    </xs:documentation>
+                                </xs:annotation>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:sequence>
                     <!-- /TEST -->
                 </xs:sequence>
                 <xs:attribute name="name" use="required" type="po:DistroNameType"/>
@@ -269,45 +285,44 @@ permissions and limitations under the License.
     </xs:complexType>      
 
 
-<!--    <!-\- TEST -\->
-    <xs:complexType name="DataSetType">
+    <!-- TEST -->
+<!--    <xs:complexType name="DataSetType">
         <xs:annotation>
             <xs:documentation>
-                The type specifying the dataset. The dataset is decribed in more detail in the Language Overview section of the specification.
+                A type defining the external type data and task settings.                
             </xs:documentation>
         </xs:annotation>
         <xs:complexContent>
             <xs:extension base="ct:PharmMLRootType">
                 <xs:sequence>
-                    <xs:element ref="ds:Definition"/>
-                    <xs:choice>
-                        <xs:element ref="ds:ExternalFile" maxOccurs="1">
+                    <xs:element name="ColumnMapping" minOccurs="0" maxOccurs="unbounded" type="ds:ColumnMappingType">
+                        <xs:annotation>
+                            <xs:documentation>
+                                Defines mapping to the dataset. 
+                            </xs:documentation>
+                        </xs:annotation>
+                    </xs:element>
+                    <xs:sequence>
+                        <xs:element ref="ds:DataSet">
                             <xs:annotation>
                                 <xs:documentation>
-                                    Import datafile
+                                    Data for each subject within the study.
                                 </xs:documentation>
                             </xs:annotation>
                         </xs:element>
-                        <xs:element ref="ds:Table" maxOccurs="1">
-                            <xs:annotation>
-                                <xs:documentation>
-                                    Defines a data table.
-                                </xs:documentation>
-                            </xs:annotation>
-                        </xs:element>
-                    </xs:choice>
+                    </xs:sequence>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
-    </xs:complexType>
-    <!-\- /TEST -\->
+    </xs:complexType>-->
+    <!-- /TEST -->
 
-    <!-\- elements -\->
+    <!-- elements -->
     <xs:element name="ProbOnto" type="po:ProbOntoType">
         <xs:annotation>
             <xs:documentation>The main SO element.</xs:documentation>
         </xs:annotation>
-    </xs:element>-->
+    </xs:element>
 
 <!--    <xs:element name="DataSet" type="po:DataSetType">
         <xs:annotation>
