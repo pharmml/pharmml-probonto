@@ -20,19 +20,19 @@ permissions and limitations under the License.
     xmlns:po="http://www.pharmml.org/probonto/ProbOnto"
     elementFormDefault="qualified"
     attributeFormDefault="unqualified"
-    xmlns:ct="http://www.pharmml.org/pharmml/0.7/CommonTypes"
-    xmlns:ds="http://www.pharmml.org/pharmml/0.7/Dataset"
-    xmlns:design="http://www.pharmml.org/pharmml/0.7/TrialDesign"
+    xmlns:ct="http://www.pharmml.org/pharmml/0.8/CommonTypes"
+    xmlns:ds="http://www.pharmml.org/pharmml/0.8/Dataset"
+    xmlns:design="http://www.pharmml.org/pharmml/0.8/TrialDesign"
     version="0.3">
 
-    <xs:import namespace="http://www.pharmml.org/pharmml/0.7/CommonTypes"
+    <xs:import namespace="http://www.pharmml.org/pharmml/0.8/CommonTypes"
         schemaLocation="../pharmml-spec/definitions/commonTypes.xsd"/>
     
-    <xs:import namespace="http://www.pharmml.org/pharmml/0.7/Dataset"
+    <xs:import namespace="http://www.pharmml.org/pharmml/0.8/Dataset"
         schemaLocation="../pharmml-spec/definitions/dataset.xsd"/>
     
     <!-- TEST -->
-    <xs:import namespace="http://www.pharmml.org/pharmml/0.7/TrialDesign"
+    <xs:import namespace="http://www.pharmml.org/pharmml/0.8/TrialDesign"
         schemaLocation="../pharmml-spec/definitions/trialDesign.xsd"/>
     <!-- TEST -->
     
@@ -47,7 +47,6 @@ permissions and limitations under the License.
             <xs:enumeration value="Binomial1"/>
             <xs:enumeration value="CategoricalOrdered1"/>
             <xs:enumeration value="CategoricalNonordered1"/>
-            <xs:enumeration value="CategoricalOrdered1"/>
             <xs:enumeration value="ConwayMaxwellPoisson1"/>
             <xs:enumeration value="DoublePoisson1"/>
             <xs:enumeration value="GeneralizedNegativeBinomial1"/>
