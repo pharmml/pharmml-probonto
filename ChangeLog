@@ -6,12 +6,21 @@ separate schema setup
 - codenames for new distributions added
 - typos and bug fixes in the database
 
-0.2.4 	4 September 2915
+0.2.4 	4 September 2015
 - added new distributions and parameterisations - total of ~70
 - added >= 100 relationships and properties
 - corrected/extended schema where required 
 
-0.2.9 	11 October 2915
+0.2.9 	11 October 2015
 - added new distributions and parameterisations - total of 81
 - added new relationships - total on 128
 - corrected/extended schema where required 
+
+0.3 	11 October 2015
+- added new distributions and parameterisations - total of 81
+- added new relationships - total on 128
+- corrected/extended schema where required 
+
+0.3.1 	11 January 2016
+- added new empirical distributions - random/systematic/unknown samples
+

@@ -30,12 +30,7 @@ permissions and limitations under the License.
     
     <xs:import namespace="http://www.pharmml.org/pharmml/0.8/Dataset"
         schemaLocation="../pharmml-spec/definitions/dataset.xsd"/>
-    
-    <!-- TEST -->
-    <xs:import namespace="http://www.pharmml.org/pharmml/0.8/TrialDesign"
-        schemaLocation="../pharmml-spec/definitions/trialDesign.xsd"/>
-    <!-- TEST -->
-    
+        
     <xs:simpleType name="DistroNameType">
         <xs:annotation>
             <xs:documentation>The names of ProbOnto distributions.</xs:documentation>
@@ -208,7 +203,6 @@ permissions and limitations under the License.
                     <xs:element name="LowerTruncationBound" minOccurs="0" maxOccurs="1" type="po:DistributionBoundType"/>
                     <xs:element name="UpperTruncationBound" minOccurs="0" maxOccurs="1" type="po:DistributionBoundType"/>
                     <xs:element name="MixtureComponent" minOccurs="0" maxOccurs="unbounded" type="po:MixtureComponent"/>
-                    <!-- TEST -->
                     <xs:sequence minOccurs="0">
                         <xs:element name="ColumnMapping" minOccurs="0" maxOccurs="unbounded" type="ds:ColumnMappingType">
                             <xs:annotation>
@@ -227,7 +221,6 @@ permissions and limitations under the License.
                             </xs:element>
                         </xs:sequence>
                     </xs:sequence>
-                    <!-- /TEST -->
                 </xs:sequence>
                 <xs:attribute name="name" use="required" type="po:DistroNameType"/>
             </xs:extension>
@@ -283,53 +276,11 @@ permissions and limitations under the License.
         </xs:complexContent>
     </xs:complexType>      
 
-
-    <!-- TEST -->
-<!--    <xs:complexType name="DataSetType">
-        <xs:annotation>
-            <xs:documentation>
-                A type defining the external type data and task settings.                
-            </xs:documentation>
-        </xs:annotation>
-        <xs:complexContent>
-            <xs:extension base="ct:PharmMLRootType">
-                <xs:sequence>
-                    <xs:element name="ColumnMapping" minOccurs="0" maxOccurs="unbounded" type="ds:ColumnMappingType">
-                        <xs:annotation>
-                            <xs:documentation>
-                                Defines mapping to the dataset. 
-                            </xs:documentation>
-                        </xs:annotation>
-                    </xs:element>
-                    <xs:sequence>
-                        <xs:element ref="ds:DataSet">
-                            <xs:annotation>
-                                <xs:documentation>
-                                    Data for each subject within the study.
-                                </xs:documentation>
-                            </xs:annotation>
-                        </xs:element>
-                    </xs:sequence>
-                </xs:sequence>
-            </xs:extension>
-        </xs:complexContent>
-    </xs:complexType>-->
-    <!-- /TEST -->
-
     <!-- elements -->
     <xs:element name="ProbOnto" type="po:ProbOntoType">
         <xs:annotation>
             <xs:documentation>The main SO element.</xs:documentation>
         </xs:annotation>
     </xs:element>
-
-<!--    <xs:element name="DataSet" type="po:DataSetType">
-        <xs:annotation>
-            <xs:documentation>
-                This element specifies a dataset in PharmML. Its children define its structure and the
-                data associate with it.
-            </xs:documentation>
-        </xs:annotation>
-    </xs:element>    -->
 
 </xs:schema>
