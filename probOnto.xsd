@@ -23,7 +23,7 @@ permissions and limitations under the License.
     xmlns:ct="http://www.pharmml.org/pharmml/0.8/CommonTypes"
     xmlns:ds="http://www.pharmml.org/pharmml/0.8/Dataset"
     xmlns:design="http://www.pharmml.org/pharmml/0.8/TrialDesign"
-    version="0.3">
+    version=“0.3.1”>
 
     <xs:import namespace="http://www.pharmml.org/pharmml/0.8/CommonTypes"
         schemaLocation="../pharmml-spec/definitions/commonTypes.xsd"/>
