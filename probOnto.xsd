@@ -26,10 +26,10 @@ permissions and limitations under the License.
     version="0.3.1">
 
     <xs:import namespace="http://www.pharmml.org/pharmml/0.8/CommonTypes"
-        schemaLocation="../pharmml-spec/definitions/commonTypes.xsd"/>
+        schemaLocation="http://www.pharmml.org/pharmml/0.8/CommonTypes"/>
     
     <xs:import namespace="http://www.pharmml.org/pharmml/0.8/Dataset"
-        schemaLocation="../pharmml-spec/definitions/dataset.xsd"/>
+        schemaLocation="http://www.pharmml.org/pharmml/0.8/Dataset"/>
         
     <xs:simpleType name="DistroNameType">
         <xs:annotation>
