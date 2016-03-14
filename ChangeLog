@@ -1,5 +1,6 @@
 ChangeLog
-0.2	03 July 2015	
+
+0.2	    03 July 2015	
 separate schema setup
 
 0.2.3	24 July 2015	
@@ -24,3 +25,7 @@ separate schema setup
 0.3.1 	11 January 2016
 - added new empirical distributions - random/systematic/unknown samples
 
+1.1 	14 March 2016
+- 20 new distributions (mainly those supported in STAN) 
+- removed F2 (was identical to F1 despite different expression of the PDF) 
+- Now it totals to 101 uni- and multi-variates, 1 mixture distribution and 3 empiric distributions
