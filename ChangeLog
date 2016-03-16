@@ -28,4 +28,4 @@ separate schema setup
 1.1 	14 March 2016
 - 20 new distributions (mainly those supported in STAN) 
 - removed F2 (was identical to F1 despite different expression of the PDF) 
-- Now it totals to 101 uni- and multi-variates, 1 mixture distribution and 3 empiric distributions
+- fixed typos and minor bugs in the KB

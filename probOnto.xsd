@@ -45,7 +45,7 @@ permissions and limitations under the License.
             <xs:enumeration value="CategoricalNonordered1"/>
             <xs:enumeration value="ConwayMaxwellPoisson1"/>
             <xs:enumeration value="DoublePoisson1"/>
-            <xs:enumeration value="GeneralizedNegativeBinomial1"/> <!-- 10 -->
+            <xs:enumeration value="GeneralizedNegativeBinomial1"/>
             <xs:enumeration value="GeneralizedPoisson1"/>
             <xs:enumeration value="GeneralizedPoisson2"/>
             <xs:enumeration value="GeneralizedPoisson3"/>
@@ -55,7 +55,7 @@ permissions and limitations under the License.
             <xs:enumeration value="NegativeBinomial1"/>
             <xs:enumeration value="NegativeBinomial2"/>
             <xs:enumeration value="NegativeBinomial3"/>
-            <xs:enumeration value="NegativeBinomial4"/>             <!-- 20 -->
+            <xs:enumeration value="NegativeBinomial4"/>
             <xs:enumeration value="NegativeBinomial5"/>
             <xs:enumeration value="NegativeBinomial6"/>
             <xs:enumeration value="OrderedLogistic1"/>
@@ -65,7 +65,7 @@ permissions and limitations under the License.
             <xs:enumeration value="UniformDiscrete2"/>
             <xs:enumeration value="ZeroInflatedNegativeBinomial1"/>
             <xs:enumeration value="ZeroInflatedGeneralizedPoisson1"/>
-            <xs:enumeration value="ZeroInflatedPoisson1"/>          <!-- 30 -->
+            <xs:enumeration value="ZeroInflatedPoisson1"/>
             <!-- Univariate continuous -->
             <xs:enumeration value="Beta1"/>
             <xs:enumeration value="BirnbaumSaunders1"/>
@@ -76,7 +76,7 @@ permissions and limitations under the License.
             <xs:enumeration value="Exponential1"/>
             <xs:enumeration value="Exponential2"/>
             <xs:enumeration value="ExponentiallyModifiedGaussian1"/>
-            <xs:enumeration value="F1"/>                            <!-- 10 -->
+            <xs:enumeration value="F1"/>
             <xs:enumeration value="Frechet1"/>
             <xs:enumeration value="Frechet2"/>
             <xs:enumeration value="Gamma1"/>
@@ -86,7 +86,7 @@ permissions and limitations under the License.
             <xs:enumeration value="GeneralizedGamma3"/>
             <xs:enumeration value="Gompertz1"/>
             <xs:enumeration value="Gumbel1"/>
-            <xs:enumeration value="HalfNormal1"/>                   <!-- 20 -->
+            <xs:enumeration value="HalfNormal1"/>
             <xs:enumeration value="HyperbolicSecant1"/>
             <xs:enumeration value="InverseGamma1"/>
             <xs:enumeration value="InverseGaussian1"/>
@@ -96,7 +96,7 @@ permissions and limitations under the License.
             <xs:enumeration value="Logistic2"/> 
             <xs:enumeration value="LogitNormal1"/>
             <xs:enumeration value="LogLogistic1"/>
-            <xs:enumeration value="LogLogistic2"/>                  <!-- 30 -->
+            <xs:enumeration value="LogLogistic2"/>
             <xs:enumeration value="LogNormal1"/>                    
             <xs:enumeration value="LogNormal2"/>
             <xs:enumeration value="LogNormal3"/>
@@ -106,7 +106,7 @@ permissions and limitations under the License.
             <xs:enumeration value="LogUniform1"/>
             <xs:enumeration value="Lomax1"/>
             <xs:enumeration value="Nakagami1"/>
-            <xs:enumeration value="Normal1"/>                       <!-- 40 -->
+            <xs:enumeration value="Normal1"/>
             <xs:enumeration value="Normal2"/>
             <xs:enumeration value="Normal3"/>
             <xs:enumeration value="NormalInverseGamma1"/>
@@ -116,7 +116,7 @@ permissions and limitations under the License.
             <xs:enumeration value="Rice1"/>
             <xs:enumeration value="ScaledInverseChiSquare1"/>
             <xs:enumeration value="SkewNormal1"/>
-            <xs:enumeration value="StandardNormal1"/>               <!-- 50 -->
+            <xs:enumeration value="StandardNormal1"/>
             <xs:enumeration value="StandardUniform1"/>
             <xs:enumeration value="StudentT1"/>
             <xs:enumeration value="StudentT2"/>
@@ -125,7 +125,7 @@ permissions and limitations under the License.
             <xs:enumeration value="Uniform1"/>
             <xs:enumeration value="VonMises1"/>
             <xs:enumeration value="Weibull1"/>
-            <xs:enumeration value="Weibull2"/>                      <!-- 59 -->
+            <xs:enumeration value="Weibull2"/>
             <!-- Multivariate discrete -->
             <xs:enumeration value="Multinomial1"/>
             <!-- Multivariate -->
