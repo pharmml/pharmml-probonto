@@ -265,7 +265,13 @@ permissions and limitations under the License.
                     </xs:sequence>
                 </xs:sequence>
                 <!-- TEST -->
-                <xs:attribute name="type" use="optional" type="po:DistroType"/>
+                <xs:attribute name="type" use="optional" type="po:DistroType">
+                    <xs:annotation>
+                        <xs:documentation>
+                            Optional attribute, mainly to use with empirical distributions.
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
                 <!-- /TEST -->
                 <xs:attribute name="name" use="required" type="po:DistroNameType"/>
             </xs:extension>
