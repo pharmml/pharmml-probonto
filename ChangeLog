@@ -29,3 +29,7 @@ separate schema setup
 - 20 new distributions (mainly those supported in STAN) 
 - removed F2 (was identical to F1 despite different expression of the PDF) 
 - fixed typos and minor bugs in the KB
+
+1.1.1 	30 June 2016
+- adding Realisation element - resolving mapping inconsistency 
+
