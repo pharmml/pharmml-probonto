@@ -20,15 +20,15 @@ permissions and limitations under the License.
     xmlns:po="http://www.pharmml.org/probonto/ProbOnto"
     elementFormDefault="qualified"
     attributeFormDefault="unqualified"
-    xmlns:ct="http://www.pharmml.org/pharmml/0.9/CommonTypes"
-    xmlns:ds="http://www.pharmml.org/pharmml/0.9/Dataset"
+    xmlns:ct="http://www.pharmml.org/pharmml/0.8/CommonTypes"
+    xmlns:ds="http://www.pharmml.org/pharmml/0.8/Dataset"
     version="1.1">
 
-    <xs:import namespace="http://www.pharmml.org/pharmml/0.9/CommonTypes"
-        schemaLocation="http://www.pharmml.org/pharmml/0.9/CommonTypes"/>
+    <xs:import namespace="http://www.pharmml.org/pharmml/0.8/CommonTypes"
+        schemaLocation="http://www.pharmml.org/pharmml/0.8/CommonTypes"/>
     
-    <xs:import namespace="http://www.pharmml.org/pharmml/0.9/Dataset"
-        schemaLocation="http://www.pharmml.org/pharmml/0.9/Dataset"/>
+    <xs:import namespace="http://www.pharmml.org/pharmml/0.8/Dataset"
+        schemaLocation="http://www.pharmml.org/pharmml/0.8/Dataset"/>
         
     <xs:simpleType name="DistroNameType">
         <xs:annotation>
@@ -227,6 +227,7 @@ permissions and limitations under the License.
         <xs:complexContent>
             <xs:extension base="ct:PharmMLRootType">
                 <xs:sequence>
+                    <xs:element name="Realisation" minOccurs="0" type="po:RealisationType"/>
                     <xs:element name="Parameter" minOccurs="0" maxOccurs="unbounded" type="po:DistributionParameterType"/>
                     <xs:element name="LowerTruncationBound" minOccurs="0" maxOccurs="1" type="po:DistributionBoundType"/>
                     <xs:element name="UpperTruncationBound" minOccurs="0" maxOccurs="1" type="po:DistributionBoundType"/>
@@ -254,6 +255,19 @@ permissions and limitations under the License.
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
+    
+    <!-- TEST -->
+    <xs:complexType name="RealisationType">
+        <xs:annotation>
+            <xs:documentation>Realisation type.</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:extension base="ct:PharmMLRootType">
+                <xs:attribute name="symbId" type="ct:SymbolIdType"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <!-- /TEST -->
     
     <xs:complexType name="MixtureComponent">
         <xs:annotation>
