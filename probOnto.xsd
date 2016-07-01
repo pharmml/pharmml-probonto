@@ -22,7 +22,7 @@ permissions and limitations under the License.
     attributeFormDefault="unqualified"
     xmlns:ct="http://www.pharmml.org/pharmml/0.8/CommonTypes"
     xmlns:ds="http://www.pharmml.org/pharmml/0.8/Dataset"
-    version="1.1">
+    version="1.1.1">
 
     <xs:import namespace="http://www.pharmml.org/pharmml/0.8/CommonTypes"
         schemaLocation="http://www.pharmml.org/pharmml/0.8/CommonTypes"/>
@@ -219,7 +219,6 @@ permissions and limitations under the License.
         </xs:restriction>
     </xs:simpleType>
     
-    <!-- TEST -->
     <xs:simpleType name="DistroType">
         <xs:annotation>
             <xs:documentation>The type of a distribution.</xs:documentation>
@@ -229,7 +228,6 @@ permissions and limitations under the License.
             <xs:enumeration value="multivariate"/>
         </xs:restriction>
     </xs:simpleType>
-    <!-- /TEST -->
     
     <xs:complexType name="ProbOntoType">
         <xs:annotation>
@@ -238,9 +236,7 @@ permissions and limitations under the License.
         <xs:complexContent>
             <xs:extension base="ct:PharmMLRootType">
                 <xs:sequence>
-                    <!-- TEST -->
                     <xs:element name="Realisation" minOccurs="0" type="po:RealisationType"/>
-                    <!-- /TEST -->
                     <xs:element name="Parameter" minOccurs="0" maxOccurs="unbounded" type="po:DistributionParameterType"/>
                     <xs:element name="LowerTruncationBound" minOccurs="0" maxOccurs="1" type="po:DistributionBoundType"/>
                     <xs:element name="UpperTruncationBound" minOccurs="0" maxOccurs="1" type="po:DistributionBoundType"/>
@@ -264,7 +260,6 @@ permissions and limitations under the License.
                         </xs:sequence>
                     </xs:sequence>
                 </xs:sequence>
-                <!-- TEST -->
                 <xs:attribute name="type" use="optional" type="po:DistroType">
                     <xs:annotation>
                         <xs:documentation>
@@ -272,13 +267,11 @@ permissions and limitations under the License.
                         </xs:documentation>
                     </xs:annotation>
                 </xs:attribute>
-                <!-- /TEST -->
                 <xs:attribute name="name" use="required" type="po:DistroNameType"/>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
     
-    <!-- TEST -->
     <xs:complexType name="RealisationType">
         <xs:annotation>
             <xs:documentation>Realisation type.</xs:documentation>
@@ -289,7 +282,6 @@ permissions and limitations under the License.
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    <!-- /TEST -->
     
     <xs:complexType name="MixtureComponent">
         <xs:annotation>
