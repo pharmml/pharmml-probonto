@@ -31,5 +31,6 @@ separate schema setup
 - fixed typos and minor bugs in the KB
 
 1.1.1 	1 July 2016
-- added Realisation element - resolving mapping inconsistency
+- added Realisation and Weight elements - resolving mapping inconsistency 
+and removeing naming differences compared to UncertML
 - added type attribute to distinguish between uni-multi-variates
