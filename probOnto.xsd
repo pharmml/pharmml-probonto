@@ -236,8 +236,8 @@ permissions and limitations under the License.
         <xs:complexContent>
             <xs:extension base="ct:PharmMLRootType">
                 <xs:sequence>
-                    <xs:element name="Realisation" minOccurs="0" type="po:SamplesType"/>
-                    <xs:element name="Weight" minOccurs="0" type="po:SamplesType"/>
+                    <xs:element name="Realisation" minOccurs="0" type="ct:StandardAssignType"/>
+                    <xs:element name="Weight" minOccurs="0" type="ct:StandardAssignType"/>
                     <xs:element name="Parameter" minOccurs="0" maxOccurs="unbounded" type="po:DistributionParameterType"/>
                     <xs:element name="LowerTruncationBound" minOccurs="0" maxOccurs="1" type="po:DistributionBoundType"/>
                     <xs:element name="UpperTruncationBound" minOccurs="0" maxOccurs="1" type="po:DistributionBoundType"/>
@@ -273,7 +273,7 @@ permissions and limitations under the License.
         </xs:complexContent>
     </xs:complexType>
     
-    <xs:complexType name="SamplesType">
+<!--    <xs:complexType name="SamplesType">
         <xs:annotation>
             <xs:documentation>Realisation type.</xs:documentation>
         </xs:annotation>
@@ -282,7 +282,7 @@ permissions and limitations under the License.
                 <xs:attribute name="symbId" type="ct:SymbolIdType"/>
             </xs:extension>
         </xs:complexContent>
-    </xs:complexType>
+    </xs:complexType>-->
     
     <xs:complexType name="MixtureComponent">
         <xs:annotation>
