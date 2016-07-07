@@ -272,18 +272,7 @@ permissions and limitations under the License.
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    
-<!--    <xs:complexType name="SamplesType">
-        <xs:annotation>
-            <xs:documentation>Realisation type.</xs:documentation>
-        </xs:annotation>
-        <xs:complexContent>
-            <xs:extension base="ct:PharmMLRootType">
-                <xs:attribute name="symbId" type="ct:SymbolIdType"/>
-            </xs:extension>
-        </xs:complexContent>
-    </xs:complexType>-->
-    
+        
     <xs:complexType name="MixtureComponent">
         <xs:annotation>
             <xs:documentation>Type for ProbOnto distribution mixture component.</xs:documentation>
