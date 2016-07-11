@@ -128,7 +128,8 @@ permissions and limitations under the License.
             <xs:enumeration value="Uniform1"/>
             <xs:enumeration value="VonMises1"/>                           <!-- UC 60 -->
             <xs:enumeration value="Weibull1"/>
-            <xs:enumeration value="Weibull2"/>                            <!-- UC 62 -->
+            <xs:enumeration value="Weibull2"/>
+            <xs:enumeration value="WienerDiffusionModel1"/>               <!-- UC 63 -->
             <!-- Multivariate discrete -->
             <xs:enumeration value="Multinomial1"/>                        <!-- MD 1 -->
             <!-- Multivariate -->
@@ -159,6 +160,7 @@ permissions and limitations under the License.
         <xs:restriction base="xs:Name">
             <xs:enumeration value="alpha"/>
             <xs:enumeration value="beta"/>
+            <xs:enumeration value="boundSeparation"/>   <!-- NEW -->
             <xs:enumeration value="categoryProb"/>
             <xs:enumeration value="choleskyFactor"/>
             <xs:enumeration value="coefVar"/>
@@ -168,14 +170,16 @@ permissions and limitations under the License.
             <xs:enumeration value="degreesOfFreedom"/>
             <xs:enumeration value="denominator"/>
             <xs:enumeration value="dispersion"/>
+            <xs:enumeration value="driftRate"/>         <!-- NEW -->
             <xs:enumeration value="geomStdev"/>
             <xs:enumeration value="index"/>
+            <xs:enumeration value="initialBias"/>       <!-- NEW -->
             <xs:enumeration value="inverseScale"/>
             <xs:enumeration value="inverseScaleMatrix"/>
             <xs:enumeration value="kernelMatrix"/>
             <xs:enumeration value="lambda"/>
-            <xs:enumeration value="levelEnd"/>      <!-- NEW -->
-            <xs:enumeration value="levelStart"/>    <!-- NEW -->
+            <xs:enumeration value="levelEnd"/>          <!-- NEW -->
+            <xs:enumeration value="levelStart"/>        <!-- NEW -->
             <xs:enumeration value="location"/>
             <xs:enumeration value="locationOfMinimum"/>
             <xs:enumeration value="logitProbability"/>
@@ -190,6 +194,7 @@ permissions and limitations under the License.
             <xs:enumeration value="median"/>
             <xs:enumeration value="minimum"/>
             <xs:enumeration value="noncentrality"/>
+            <xs:enumeration value="nondecisionTime"/>   <!-- NEW -->
             <xs:enumeration value="numberOfFailures"/>
             <xs:enumeration value="numberOfSuccesses"/>
             <xs:enumeration value="numberOfTrials"/>
