@@ -30,8 +30,8 @@ separate schema setup
 - removed F2 (was identical to F1 despite different expression of the PDF) 
 - fixed typos and minor bugs in the KB
 
-1.2 	NN June 2016
-- NN new distributions
-- NN new relationships and re-parameterisations
-- fixed typos and minor bugs in the KB
+1.2 	NN July 2016
+- 4 new distributions
+- 14 new relationships and re-parameterisations
+- fixed typos and minor bugs in the KB (see spec)
 - 
