@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Copyright 2015 European Molecular Biology Laboratory, Heidelberg,
+Copyright 2015-2016 European Molecular Biology Laboratory, Heidelberg,
 Germany and UCL, London, United Kingdom.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you
@@ -22,7 +22,7 @@ permissions and limitations under the License.
     attributeFormDefault="unqualified"
     xmlns:ct="http://www.pharmml.org/pharmml/0.9/CommonTypes"
     xmlns:ds="http://www.pharmml.org/pharmml/0.9/Dataset"
-    version="1.1">
+    version="1.2">
 
     <xs:import namespace="http://www.pharmml.org/pharmml/0.9/CommonTypes"
         schemaLocation="http://www.pharmml.org/pharmml/0.9/CommonTypes"/>
