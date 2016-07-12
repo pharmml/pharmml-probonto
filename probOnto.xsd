@@ -229,6 +229,16 @@ permissions and limitations under the License.
         </xs:restriction>
     </xs:simpleType>
     
+    <xs:simpleType name="DistroType">
+        <xs:annotation>
+            <xs:documentation>The type of a distribution.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:Name">
+            <xs:enumeration value="univariate"/>
+            <xs:enumeration value="multivariate"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
     <xs:complexType name="ProbOntoType">
         <xs:annotation>
             <xs:documentation>Type for ProbOnto distributions.</xs:documentation>
@@ -240,6 +250,22 @@ permissions and limitations under the License.
                         <xs:sequence>
                             <xs:element name="Realisation" minOccurs="0" type="ct:StandardAssignType"/>
                             <xs:element name="Weight" minOccurs="0" type="ct:StandardAssignType"/>
+                            <xs:sequence minOccurs="0">
+                                <xs:element name="ColumnMapping" minOccurs="0" maxOccurs="unbounded" type="ds:ColumnMappingType">
+                                    <xs:annotation>
+                                        <xs:documentation>
+                                            Defines mapping to the dataset. 
+                                        </xs:documentation>
+                                    </xs:annotation>
+                                </xs:element>
+                                <xs:element ref="ds:DataSet">
+                                    <xs:annotation>
+                                        <xs:documentation>
+                                            Data for each subject within the study.
+                                        </xs:documentation>
+                                    </xs:annotation>
+                                </xs:element>
+                            </xs:sequence>
                         </xs:sequence>
                         <xs:sequence>
                             <xs:element name="Parameter" minOccurs="0" maxOccurs="unbounded" type="po:DistributionParameterType"/>
@@ -248,26 +274,7 @@ permissions and limitations under the License.
                             <xs:element name="MixtureComponent" minOccurs="0" maxOccurs="unbounded" type="po:MixtureComponent"/>
                         </xs:sequence>
                     </xs:choice>
-                    <xs:sequence minOccurs="0">
-                        <xs:element name="ColumnMapping" minOccurs="0" maxOccurs="unbounded" type="ds:ColumnMappingType">
-                            <xs:annotation>
-                                <xs:documentation>
-                                    Defines mapping to the dataset. 
-                                </xs:documentation>
-                            </xs:annotation>
-                        </xs:element>
-                        <xs:sequence>
-                            <xs:element ref="ds:DataSet">
-                                <xs:annotation>
-                                    <xs:documentation>
-                                        Data for each subject within the study.
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:sequence>
                 </xs:sequence>
-                <!-- TEST -->
                 <xs:attribute name="type" use="optional" type="po:DistroType">
                     <xs:annotation>
                         <xs:documentation>
@@ -275,59 +282,11 @@ permissions and limitations under the License.
                         </xs:documentation>
                     </xs:annotation>
                 </xs:attribute>
-                <!-- /TEST -->
                 <xs:attribute name="name" use="required" type="po:DistroNameType"/>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    
-    <!-- TEST -->
-    <xs:simpleType name="DistroType">
-        <xs:annotation>
-            <xs:documentation>The type of a distribution.</xs:documentation>
-        </xs:annotation>
-        <xs:restriction base="xs:Name">
-            <xs:enumeration value="univariate"/>
-            <xs:enumeration value="multivariate"/>
-        </xs:restriction>
-    </xs:simpleType>
-    <!-- /TEST -->
-    
-<!--    <xs:complexType name="ProbOntoType">
-        <xs:annotation>
-            <xs:documentation>Type for ProbOnto distributions.</xs:documentation>
-        </xs:annotation>
-        <xs:complexContent>
-            <xs:extension base="ct:PharmMLRootType">
-                <xs:sequence>
-                    <xs:element name="Parameter" minOccurs="0" maxOccurs="unbounded" type="po:DistributionParameterType"/>
-                    <xs:element name="LowerTruncationBound" minOccurs="0" maxOccurs="1" type="po:DistributionBoundType"/>
-                    <xs:element name="UpperTruncationBound" minOccurs="0" maxOccurs="1" type="po:DistributionBoundType"/>
-                    <xs:element name="MixtureComponent" minOccurs="0" maxOccurs="unbounded" type="po:MixtureComponent"/>
-                    <xs:sequence minOccurs="0">
-                        <xs:element name="ColumnMapping" minOccurs="0" maxOccurs="unbounded" type="ds:ColumnMappingType">
-                            <xs:annotation>
-                                <xs:documentation>
-                                    Defines mapping to the dataset. 
-                                </xs:documentation>
-                            </xs:annotation>
-                        </xs:element>
-                        <xs:sequence>
-                            <xs:element ref="ds:DataSet">
-                                <xs:annotation>
-                                    <xs:documentation>
-                                        Data for each subject within the study.
-                                    </xs:documentation>
-                                </xs:annotation>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:sequence>
-                </xs:sequence>
-                <xs:attribute name="name" use="required" type="po:DistroNameType"/>
-            </xs:extension>
-        </xs:complexContent>
-    </xs:complexType>-->
-    
+        
     <xs:complexType name="MixtureComponent">
         <xs:annotation>
             <xs:documentation>Type for ProbOnto distribution mixture component.</xs:documentation>
