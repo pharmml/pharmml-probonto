@@ -19,7 +19,7 @@ separate schema setup
 
 0.3 	11 October 2015
 - added new distributions and parameterisations - total of 81
-- added new relationships - total on 128
+- added new relationships - total of 128
 - corrected/extended schema where required 
 
 0.3.1 	11 January 2016
@@ -30,8 +30,19 @@ separate schema setup
 - removed F2 (was identical to F1 despite different expression of the PDF) 
 - fixed typos and minor bugs in the KB
 
-1.2 	NN July 2016
-- 4 new distributions
+2.0 	19 July 2016
+- 4 new distributions LogNormal7 (used in PopED), 
+Trapezoidal1, HalfNormal2 and WienerDiffusionModel1
 - 14 new relationships and re-parameterisations
-- fixed typos and minor bugs in the KB (see spec)
-- 
+- ~15 new HFs and SFs (exponential and Weibull with plots)
+- references for each relationship/re-parameterisation provided. 
+- few bugs/typos fixed - see spec for details
+
+Current count:
+Discrete univariates 	- 30
+Continuous univariates 	- 63
+Mixture univariate 	-  1
+Discrete multivariates  -  1
+Continuous multivariates- 11
+Empirical/Samples 	-  3
+Total			= 109
