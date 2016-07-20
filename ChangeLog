@@ -30,7 +30,7 @@ separate schema setup
 - removed F2 (was identical to F1 despite different expression of the PDF) 
 - fixed typos and minor bugs in the KB
 
-2.0 	19 July 2016
+2.0 	20 July 2016
 - 4 new distributions LogNormal7 (used in PopED), 
 Trapezoidal1, HalfNormal2 and WienerDiffusionModel1
 - 14 new relationships and re-parameterisations
