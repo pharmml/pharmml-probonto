@@ -46,3 +46,21 @@ Discrete multivariates  -  1
 Continuous multivariates- 11
 Empirical/Samples 	-  3
 Total			= 109
+
+2.1 	25 August 2016
+- 14 new distributions: Arcsine1, Arcsine2, Borel, Chi, Epanechnikov,
+Folded Normal, Half-Cauchy, Inverse Chi-Square (STAN),
+Levy, Power Normal, Standard Cauchy, Student T 3 (STAN),
+Cholesky LKJ Correlation (STAN), LKJ Correlation (STAN)
+- 19 new relationships and re-parameterisations
+- few bugs/typos fixed - see spec for details
+
+Current count:
+Discrete univariates 	- 31
+Continuous univariates 	- 74
+Mixture univariate 	-  1
+Discrete multivariates  -  1
+Continuous multivariates- 13
+Empirical/Samples 	-  3
+Total			= 123
+
