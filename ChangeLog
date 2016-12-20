@@ -48,10 +48,9 @@ Empirical/Samples 	-  3
 Total			= 109
 
 2.5 	20 December 2016
-- 44 new uni and multivariate distributions
-- 40 new relationships and re-parameterisations
-- many new HFs and SFs
-- model definitions added for most distributions 
+- more then 40 new uni and multivariate distributions
+- new relationships, re-parameterisations, HFs and SFs
+- model definitions added for majority of distributions 
 - few bugs/typos fixed - see spec for details
 
 Current count:
