@@ -46,3 +46,19 @@ Discrete multivariates  -  1
 Continuous multivariates- 11
 Empirical/Samples 	-  3
 Total			= 109
+
+2.5 	20 December 2016
+- 44 new uni and multivariate distributions
+- 40 new relationships and re-parameterisations
+- many new HFs and SFs
+- model definitions added for most distributions 
+- few bugs/typos fixed - see spec for details
+
+Current count:
+Discrete univariates 	- 36
+Continuous univariates 	- 99
+Mixture univariate 	-  1
+Discrete multivariates  -  1
+Continuous multivariates- 13
+Empirical/Samples 	-  3
+Total			= 153
