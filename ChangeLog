@@ -47,7 +47,8 @@ Continuous multivariates- 11
 Empirical/Samples 	-  3
 Total			= 109
 
-2.5 	20 December 2016
+2.5b 	20 December 2016
+(version for PharmML 0.9)
 - more then 40 new uni and multivariate distributions
 - new relationships, re-parameterisations, HFs and SFs
 - model definitions added for majority of distributions 
