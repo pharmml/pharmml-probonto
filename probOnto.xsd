@@ -22,7 +22,7 @@ permissions and limitations under the License.
     attributeFormDefault="unqualified"
     xmlns:ct="http://www.pharmml.org/pharmml/0.8/CommonTypes"
     xmlns:ds="http://www.pharmml.org/pharmml/0.8/Dataset"
-    version="2.0">
+    version="2.5">
 
     <xs:import namespace="http://www.pharmml.org/pharmml/0.8/CommonTypes"
         schemaLocation="http://www.pharmml.org/pharmml/0.8/CommonTypes"/>
@@ -91,8 +91,8 @@ permissions and limitations under the License.
             <xs:enumeration value="ExponentiallyModifiedGaussian1"/>
             <xs:enumeration value="F1"/>
             <xs:enumeration value="FoldedNormal1"/>
-            <xs:enumeration value="Frechet1"/>                            <!-- 19 -->
-            <xs:enumeration value="Frechet2"/>
+            <xs:enumeration value="Frechet1"/>
+            <xs:enumeration value="Frechet2"/>                            <!-- 20 -->
             <xs:enumeration value="Gamma1"/>
             <xs:enumeration value="Gamma2"/>
             <xs:enumeration value="GeneralizedGamma1"/>
@@ -101,8 +101,8 @@ permissions and limitations under the License.
             <xs:enumeration value="Gompertz1"/>
             <xs:enumeration value="Gumbel1"/>
             <xs:enumeration value="HalfCauchy1"/>
-            <xs:enumeration value="HalfNormal1"/>                         <!-- 29 -->
-            <xs:enumeration value="HalfNormal2"/>
+            <xs:enumeration value="HalfNormal1"/>
+            <xs:enumeration value="HalfNormal2"/>                         <!-- 30 -->
             <xs:enumeration value="HyperbolicSecant1"/>
             <xs:enumeration value="InverseChiSquared1"/>
             <xs:enumeration value="InverseGamma1"/>
@@ -111,8 +111,8 @@ permissions and limitations under the License.
             <xs:enumeration value="JohnsonSL1"/>
             <xs:enumeration value="JohnsonSN1"/>
             <xs:enumeration value="JohnsonSU1"/>
-            <xs:enumeration value="Kumaraswamy1"/>                        <!-- 39 -->
-            <xs:enumeration value="Laplace1"/>
+            <xs:enumeration value="Kumaraswamy1"/>
+            <xs:enumeration value="Laplace1"/>                            <!-- 40 -->
             <xs:enumeration value="Laplace2"/>
             <xs:enumeration value="Levy1"/>
             <xs:enumeration value="Logistic1"/>
@@ -121,8 +121,8 @@ permissions and limitations under the License.
             <xs:enumeration value="LogLogistic1"/>
             <xs:enumeration value="LogLogistic2"/>
             <xs:enumeration value="LogNormal1"/>
-            <xs:enumeration value="LogNormal2"/>                          <!-- 49 -->
-            <xs:enumeration value="LogNormal3"/>
+            <xs:enumeration value="LogNormal2"/>
+            <xs:enumeration value="LogNormal3"/>                          <!-- 50 -->
             <xs:enumeration value="LogNormal4"/>
             <xs:enumeration value="LogNormal5"/>
             <xs:enumeration value="LogNormal6"/>
@@ -131,8 +131,8 @@ permissions and limitations under the License.
             <xs:enumeration value="Lomax1"/>
             <xs:enumeration value="Makeham1"/>
             <xs:enumeration value="MaxwellBoltzmann1"/>
-            <xs:enumeration value="Muth1"/>                               <!-- 59 -->
-            <xs:enumeration value="Nakagami1"/>
+            <xs:enumeration value="Muth1"/>
+            <xs:enumeration value="Nakagami1"/>                           <!-- 60 -->
             <xs:enumeration value="NoncentralBeta1"/>
             <xs:enumeration value="NoncentralChiSquared1"/>
             <xs:enumeration value="NoncentralF1"/>
@@ -141,8 +141,8 @@ permissions and limitations under the License.
             <xs:enumeration value="Normal2"/>
             <xs:enumeration value="Normal3"/>
             <xs:enumeration value="NormalInverseGamma1"/>
-            <xs:enumeration value="ParetoTypeI1"/>                        <!-- 69 -->
-            <xs:enumeration value="ParetoTypeII1"/>
+            <xs:enumeration value="ParetoTypeI1"/>
+            <xs:enumeration value="ParetoTypeII1"/>                       <!-- 70 -->
             <xs:enumeration value="Power1"/>
             <xs:enumeration value="PowerNormal1"/>
             <xs:enumeration value="Rayleigh1"/>
@@ -151,8 +151,8 @@ permissions and limitations under the License.
             <xs:enumeration value="SinhArcsinh1"/>
             <xs:enumeration value="SinhArcsinh2"/>
             <xs:enumeration value="SkewNormal1"/>
-            <xs:enumeration value="StandardCauchy1"/>                     <!-- 79 -->
-            <xs:enumeration value="StandardLogistic1"/>
+            <xs:enumeration value="StandardCauchy1"/>
+            <xs:enumeration value="StandardLogistic1"/>                   <!-- 80 -->
             <xs:enumeration value="StandardNormal1"/>
             <xs:enumeration value="StandardPower1"/>
             <xs:enumeration value="StandardTriangular1"/>
@@ -161,8 +161,8 @@ permissions and limitations under the License.
             <xs:enumeration value="StudentT1"/>
             <xs:enumeration value="StudentT2"/>
             <xs:enumeration value="StudentT3"/>
-            <xs:enumeration value="TwosidedPower1"/>                      <!-- 89 -->
-            <xs:enumeration value="Trapezoidal1"/>
+            <xs:enumeration value="TwosidedPower1"/>
+            <xs:enumeration value="Trapezoidal1"/>                        <!-- 90 -->
             <xs:enumeration value="Triangular1"/>
             <xs:enumeration value="TruncatedNormal1"/>
             <xs:enumeration value="Uniform1"/>
@@ -170,7 +170,7 @@ permissions and limitations under the License.
             <xs:enumeration value="Weibull1"/>
             <xs:enumeration value="Weibull2"/>
             <xs:enumeration value="WienerDiffusionModel1"/>
-            <xs:enumeration value="WignerSemicircle1"/>                   <!-- 98 -->
+            <xs:enumeration value="WignerSemicircle1"/>
             <xs:enumeration value="YuleSimon1"/>                          <!-- 99 -->
             <!-- Multivariate discrete -->
             <xs:enumeration value="Multinomial1"/>
