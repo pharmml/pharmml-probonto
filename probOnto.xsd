@@ -20,15 +20,15 @@ permissions and limitations under the License.
     xmlns:po="http://www.pharmml.org/probonto/ProbOnto"
     elementFormDefault="qualified"
     attributeFormDefault="unqualified"
-    xmlns:ct="http://www.pharmml.org/pharmml/0.8/CommonTypes"
-    xmlns:ds="http://www.pharmml.org/pharmml/0.8/Dataset"
-    version="2.0">
+    xmlns:ct="http://www.pharmml.org/pharmml/0.9/CommonTypes"
+    xmlns:ds="http://www.pharmml.org/pharmml/0.9/Dataset"
+    version="2.5b">
 
-    <xs:import namespace="http://www.pharmml.org/pharmml/0.8/CommonTypes"
-        schemaLocation="http://www.pharmml.org/pharmml/0.8/CommonTypes"/>
+    <xs:import namespace="http://www.pharmml.org/pharmml/0.9/CommonTypes"
+        schemaLocation="http://www.pharmml.org/pharmml/0.9/CommonTypes"/>
     
-    <xs:import namespace="http://www.pharmml.org/pharmml/0.8/Dataset"
-        schemaLocation="http://www.pharmml.org/pharmml/0.8/Dataset"/>
+    <xs:import namespace="http://www.pharmml.org/pharmml/0.9/Dataset"
+        schemaLocation="http://www.pharmml.org/pharmml/0.9/Dataset"/>
         
     <xs:simpleType name="DistroNameType">
         <xs:annotation>
